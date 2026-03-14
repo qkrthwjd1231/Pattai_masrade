@@ -4914,7 +4914,7 @@ createGameBtn.addEventListener('click', createGame);
         if (gameId) {
             const gameDoc = await getDoc(doc(db, 'games', gameId));
 //여기를 수정해주세요 관리자 비밀번호
-            const correctPassword = gameDoc.data().adminPassword || "0000";
+            const correctPassword = gameDoc.data().adminPassword || "1231";
             if (input.value === correctPassword) {
                 closeModal('admin-password-modal');
                 isAdmin = true;
